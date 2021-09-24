@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AninmationChauHoa">
-        <activity android:name=".ex4"></activity>
-        <activity android:name=".ex3" />
-        <activity android:name=".ex2" />
         <activity android:name=".ex1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
