@@ -1,16 +1,48 @@
 package com.example.aninmationchauhoa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.View;
 
-public class ex1 extends AppCompatActivity {
+import java.util.ArrayList;
+
+
+public class ex1 extends AppCompatActivity implements OnClickListener {
+
+    private RecyclerView rlc;
+    private Adapter_song adapter;
+    private ArrayList<music> arrayList;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ex1);
+        setContentView(R.layout.main);
+
+
+        rlc = findViewById(R.id.rlc);
+        arrayList = new ArrayList<>();
+
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+        arrayList.add(new music(R.drawable.tayler,"Love Story","Taylor Swift"));
+
+        adapter = new Adapter_song(this, arrayList,this);
+        rlc.setAdapter(adapter);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        rlc.setLayoutManager(linearLayoutManager);
+    }
+
+    @Override
+    public void itemClick(music item) {
+
     }
 }
