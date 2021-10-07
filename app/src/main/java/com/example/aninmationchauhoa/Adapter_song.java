@@ -16,10 +16,10 @@ public class Adapter_song extends RecyclerView.Adapter<Adapter_song.ThingViewHol
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private ArrayList<music> arrayList;
+    private ArrayList<Music> arrayList;
     private OnClickListener listener;
 
-    public Adapter_song(Context context,  ArrayList<music> arrayList, OnClickListener listener) {
+    public Adapter_song(Context context, ArrayList<Music> arrayList, OnClickListener listener) {
        // this.context = context;
         this.layoutInflater = layoutInflater.from(context);
         this.arrayList = arrayList;
@@ -27,7 +27,7 @@ public class Adapter_song extends RecyclerView.Adapter<Adapter_song.ThingViewHol
     }
 
 
-    public Adapter_song(ArrayList<music> arrayList){
+    public Adapter_song(ArrayList<Music> arrayList){
         this.arrayList =arrayList;
     }
 
@@ -53,7 +53,7 @@ public class Adapter_song extends RecyclerView.Adapter<Adapter_song.ThingViewHol
     }
 
     public class ThingViewHolder extends RecyclerView.ViewHolder {
-        music item;
+        Music item;
         TextView tvSong, tvArtist;
         ImageView imageView;
         Adapter_song song_adapter;

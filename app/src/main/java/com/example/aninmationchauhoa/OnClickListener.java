@@ -4,6 +4,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public interface OnClickListener {
-   // void itemClick(music item);
+   // void itemClick(Music item);
     void itemClick(int pos, ImageView img, TextView song, TextView artist);
 }

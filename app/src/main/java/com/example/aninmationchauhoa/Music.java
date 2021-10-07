@@ -2,17 +2,17 @@ package com.example.aninmationchauhoa;
 
 import java.io.Serializable;
 
-public class music implements Serializable {
+public class Music implements Serializable {
     private int img;
     private String song, artist;
 
-    public music(int img, String song, String artist) {
+    public Music(int img, String song, String artist) {
         this.img = img;
         this.song = song;
         this.artist = artist;
     }
 
-    public music() {
+    public Music() {
     }
 
     public int getImg() {
