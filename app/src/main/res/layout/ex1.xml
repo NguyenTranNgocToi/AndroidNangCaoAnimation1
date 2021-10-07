@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     app:layoutDescription="@xml/ex1_scene"
-    tools:context=".ex1" >
+    tools:context=".Main" >
 
     <ImageView
         android:id="@+id/imageView11"
