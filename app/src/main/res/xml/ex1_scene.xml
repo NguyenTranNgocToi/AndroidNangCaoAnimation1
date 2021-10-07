@@ -22,7 +22,8 @@
             android:layout_height="0dp"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            motion:layout_constraintHorizontal_bias="0.454" />
         <Constraint
             android:layout_height="3dp"
             motion:layout_constraintStart_toStartOf="@+id/view8"
@@ -42,13 +43,13 @@
             android:layout_marginTop="16dp" />
         <Constraint
             android:id="@+id/textView"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="325dp"
-            android:layout_height="45dp"
-            motion:layout_constraintHorizontal_bias="0.581"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="640dp">
+            android:layout_marginTop="640dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp">
             <CustomAttribute
                 motion:attributeName="textColor"
                 motion:customColorValue="#ffffff" />
@@ -62,18 +63,31 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/textView2"
+            motion:layout_constraintStart_toEndOf="@+id/textView"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/textView"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="20dp"
+            motion:layout_constraintTop_toTopOf="@+id/textView">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="#ffffff" />
+        </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="56dp"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintHorizontal_bias="0.488"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="325dp"
-            android:id="@+id/textView" >
+            android:layout_width="164dp"
+            android:id="@+id/textView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp">
             <CustomAttribute
                 motion:attributeName="textColor"
                 motion:customColorValue="#2542E3" />
@@ -168,5 +182,19 @@
             motion:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"
             android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_height="48dp"
+            motion:layout_constraintStart_toEndOf="@+id/textView"
+            motion:layout_constraintTop_toTopOf="@+id/textView"
+            motion:layout_constraintBottom_toBottomOf="@+id/textView"
+            android:layout_width="164dp"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" >
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="#2542E3" />
+        </Constraint>
     </ConstraintSet>
 </MotionScene>

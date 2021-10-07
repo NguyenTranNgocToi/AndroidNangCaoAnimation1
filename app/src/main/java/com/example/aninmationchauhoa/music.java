@@ -1,6 +1,8 @@
 package com.example.aninmationchauhoa;
 
-public class music {
+import java.io.Serializable;
+
+public class music implements Serializable {
     private int img;
     private String song, artist;
 

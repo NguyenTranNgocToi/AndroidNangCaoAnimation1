@@ -26,6 +26,11 @@ public class Adapter_song extends RecyclerView.Adapter<Adapter_song.ThingViewHol
         this.listener = listener;
     }
 
+
+    public Adapter_song(ArrayList<music> arrayList){
+        this.arrayList =arrayList;
+    }
+
     @NonNull
     @Override
     public Adapter_song.ThingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -61,7 +66,7 @@ public class Adapter_song extends RecyclerView.Adapter<Adapter_song.ThingViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.itemClick(item);
+                    listener.itemClick(getAdapterPosition(),imageView, tvSong,tvArtist );
                 }
             });
         }

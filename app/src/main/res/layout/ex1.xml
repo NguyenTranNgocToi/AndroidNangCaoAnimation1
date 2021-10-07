@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tayler" />
+        app:srcCompat="@drawable/tayler"
+        android:transitionName="img"/>
 
     <ImageView
         android:id="@+id/imageView12"
@@ -89,6 +90,7 @@
         android:layout_width="412dp"
         android:layout_height="633dp"
         android:background="#C4D0D1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -105,16 +107,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="640dp"
-        android:text="Love Story-Taylor Swift"
+        android:text="Love Story"
         android:textColor="#EFECEC"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="song"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -136,5 +138,19 @@
         app:srcCompat="@drawable/socxam"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="Taylor Swift"
+        android:textColor="#EFECEC"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        android:transitionName="artist"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
